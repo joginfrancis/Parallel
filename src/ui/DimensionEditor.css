@@ -1,0 +1,49 @@
+.dim-editor {
+  position: fixed;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 10px;
+  box-shadow: var(--surface-shadow);
+  font-size: 13px;
+}
+.dim-editor input {
+  width: 56px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  text-align: right;
+}
+.dim-editor .dim-unit {
+  color: var(--text-muted);
+  margin-right: 2px;
+}
+.dim-editor button {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background: transparent;
+}
+.dim-editor .dim-ok {
+  color: #fff;
+  background: var(--success);
+}
+.dim-editor .dim-cancel {
+  color: var(--text-muted);
+}
+.dim-editor .dim-cancel:hover {
+  background: rgba(31, 41, 55, 0.06);
+}

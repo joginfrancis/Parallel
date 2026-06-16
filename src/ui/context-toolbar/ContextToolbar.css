@@ -1,0 +1,122 @@
+.ctx-toolbar {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--surface-shadow);
+}
+.ctx-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.ctx-sep {
+  width: 1px;
+  height: 22px;
+  background: var(--surface-border);
+  margin: 0 2px;
+}
+.ctx-btn {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  transition: background var(--t-select);
+}
+.ctx-btn:hover {
+  background: rgba(31, 41, 55, 0.06);
+}
+.ctx-btn.ctx-danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+.ctx-btn.active {
+  background: rgba(59, 130, 246, 0.12);
+  color: #3b82f6;
+}
+
+/* Text controls */
+.ctx-num {
+  min-width: 22px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.ctx-swatch {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ctx-swatch input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.ctx-swatch span {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Image opacity */
+.ctx-opacity { gap: 8px; padding: 0 6px; }
+.ctx-opacity-label { font-size: 13px; font-weight: 500; color: var(--text); }
+.ctx-opacity input[type='range'] { width: 84px; accent-color: #3b82f6; cursor: pointer; }
+
+/* Constraint chips */
+.ctx-constraint-chip {
+  width: auto;
+  padding: 0 10px;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  background: #F3E8FF;
+  color: #7C3AED;
+  border: 1px solid #E9D5FF;
+  border-radius: 12px;
+}
+.ctx-constraint-chip:hover {
+  background: #EDE9FE;
+}
+.constraint-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FF4DA6;
+  flex-shrink: 0;
+}
+.constraint-x {
+  font-size: 13px;
+  opacity: 0.5;
+  margin-left: 2px;
+}
+.ctx-constraint-chip:hover .constraint-x {
+  opacity: 1;
+  color: var(--error);
+}
+.ctx-btn.ctx-locked {
+  color: #FF4DA6;
+  background: rgba(255, 77, 166, 0.08);
+}

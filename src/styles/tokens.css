@@ -1,0 +1,51 @@
+:root {
+  /* Color tokens (UI_UX_SPEC §9) */
+  --bg: #fafaf8;
+  --grid: #eaeaea;
+  --axis: #ff4da6;
+  --selection: #3b82f6;
+  --guide: #ff4da6;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --cta: #3b82f6;
+
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-border: #ececec;
+  --surface-shadow: 0 4px 16px rgba(31, 41, 55, 0.08), 0 1px 3px rgba(31, 41, 55, 0.06);
+  --radius-pill: 999px;
+  --radius-panel: 14px;
+  --radius-btn: 10px;
+
+  /* Typography */
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Animation (UI_UX_SPEC §9) */
+  --t-select: 100ms;
+  --t-snap: 80ms;
+  --t-toolbar: 150ms;
+  --t-constraint: 120ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}

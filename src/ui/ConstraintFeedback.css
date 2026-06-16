@@ -1,0 +1,28 @@
+.constraint-feedback {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  max-width: 320px;
+  background: #FFF7ED;
+  color: #9A3412;
+  border: 1px solid #FED7AA;
+  border-radius: var(--radius-pill, 999px);
+  box-shadow: var(--surface-shadow, 0 4px 16px rgba(0, 0, 0, 0.1));
+  font-size: 13px;
+  font-weight: 500;
+  animation: feedback-in 150ms ease-out;
+}
+.constraint-feedback svg {
+  flex-shrink: 0;
+  color: #F59E0B;
+}
+@keyframes feedback-in {
+  from { opacity: 0; transform: translate(-50%, -6px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
